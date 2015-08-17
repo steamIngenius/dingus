@@ -6,4 +6,4 @@
 
 ###run:
 
-```$ java -classpath ./distro/sibjcsi.jar:. HelloDungeon```
+```$ java -classpath ./distro/libjcsi.jar:. HelloDungeon```
