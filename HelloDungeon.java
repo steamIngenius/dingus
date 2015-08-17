@@ -12,7 +12,7 @@ public class HelloDungeon {
 	public static void main(String[] args) {
 		Properties text = new Properties();
 		text.setProperty("fontSize", "20");
-		text.setProperty("font", "Courier");
+		text.setProperty("font", "Consolas");
 
 		ConsoleSystemInterface csi = null;
 		try {
@@ -24,8 +24,9 @@ public class HelloDungeon {
 			System.exit(-1);
 		}
 
-		csi.print(0,0, "Hello! Welcome to Dingus!", CSIColor.COSMIC_LATTE);
+
 		csi.refresh();
+
 
 		int x = screenWidth / 2;
 		int y = screenHeight / 2;
@@ -33,7 +34,20 @@ public class HelloDungeon {
 
 		while(!stop) {
 			csi.cls();
-			csi.print(x,y, "@", CSIColor.WHITE);
+
+
+			csi.print(0,0, "Hello! Welcome to Dingus!", CSIColor.COSMIC_LATTE);
+	        csi.print(5, 6, "########", ConsoleSystemInterface.GRAY);
+	        csi.print(5, 7, "#......#", ConsoleSystemInterface.GRAY);
+	        csi.print(5, 8, "#......#", ConsoleSystemInterface.GRAY);
+	        csi.print(5, 9, "####/###", ConsoleSystemInterface.GRAY);
+
+	        csi.print(6, 7, "......", ConsoleSystemInterface.BLUE);
+	        csi.print(6, 8, "......", ConsoleSystemInterface.BLUE);
+
+	        csi.print(9, 9, "/", ConsoleSystemInterface.BROWN);
+	        csi.print(x,y, "@", CSIColor.WHITE);
+
 			csi.refresh();
 			CharKey dir = csi.inkey();
 
