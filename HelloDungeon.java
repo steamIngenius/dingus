@@ -5,6 +5,10 @@ import net.slashie.libjcsi.CharKey;
 import java.util.Properties;
 
 public class HelloDungeon {
+
+	private static final int screenWidth = 80;
+	private static final int screenHeight = 25;
+
 	public static void main(String[] args) {
 		Properties text = new Properties();
 		text.setProperty("fontSize", "20");
@@ -23,8 +27,8 @@ public class HelloDungeon {
 		csi.print(0,0, "Hello! Welcome to Dingus!", CSIColor.COSMIC_LATTE);
 		csi.refresh();
 
-		int x = 0;
-		int y = 0;
+		int x = screenWidth / 2;
+		int y = screenHeight / 2;
 		boolean stop = false;
 
 		while(!stop) {
@@ -36,13 +40,13 @@ public class HelloDungeon {
 			if (dir.isUpArrow()&& (y-1 >= 0)) {
 				y--;
 			}
-			if (dir.isDownArrow()&& (y+1 < 25)) {
+			if (dir.isDownArrow()&& (y+1 < screenHeight)) {
 				y++;
 			}
 			if (dir.isLeftArrow()&& (x-1 >= 0)) {
 				x--;
 			}
-			if (dir.isRightArrow()&& (x+1 < 80)) {
+			if (dir.isRightArrow()&& (x+1 < screenWidth)) {
 				x++;
 			}
 			if (dir.code == CharKey.Q) {
