@@ -37,15 +37,15 @@ public class HelloDungeon {
 
 
 			csi.print(0,0, "Hello! Welcome to Dingus!", CSIColor.COSMIC_LATTE);
-	        csi.print(5, 6, "########", ConsoleSystemInterface.GRAY);
-	        csi.print(5, 7, "#......#", ConsoleSystemInterface.GRAY);
-	        csi.print(5, 8, "#......#", ConsoleSystemInterface.GRAY);
-	        csi.print(5, 9, "####/###", ConsoleSystemInterface.GRAY);
+	        csi.print(5,6, "########", CSIColor.GRAY);
+	        csi.print(5,7, "#......#", CSIColor.GRAY);
+	        csi.print(5,8, "#......#", CSIColor.GRAY);
+	        csi.print(5,9, "####/###", CSIColor.GRAY);
 
-	        csi.print(6, 7, "......", ConsoleSystemInterface.BLUE);
-	        csi.print(6, 8, "......", ConsoleSystemInterface.BLUE);
+	        csi.print(6,7, "......", CSIColor.BLUE);
+	        csi.print(6,8, "......", CSIColor.BLUE);
 
-	        csi.print(9, 9, "/", ConsoleSystemInterface.BROWN);
+	        csi.print(9,9, "/", CSIColor.BROWN);
 	        csi.print(x,y, "@", CSIColor.WHITE);
 
 			csi.refresh();
