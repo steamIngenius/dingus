@@ -2,8 +2,8 @@
 
 ###compile:
 
-```$ javac -classpath ./distro/libjcsi.jar:. HelloDungeon.java```
+```$ javac -classpath libjcsi/distro/libjcsi.jar:. HelloDungeon.java```
 
 ###run:
 
-```$ java -classpath ./distro/libjcsi.jar:. HelloDungeon```
+```$ java -classpath libjcsi/distro/libjcsi.jar:. HelloDungeon```
