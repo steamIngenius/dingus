@@ -7,3 +7,7 @@
 ###run:
 
 ```$ java -classpath libjcsi/distro/libjcsi.jar:. HelloDungeon```
+
+###Also you can:
+
+```$ ./dingus.sh```
