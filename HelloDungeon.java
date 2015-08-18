@@ -51,16 +51,16 @@ public class HelloDungeon {
 			csi.refresh();
 			CharKey dir = csi.inkey();
 
-			if (dir.isUpArrow()&& (y-1 >= 0)) {
+			if ((dir.isUpArrow()||dir.code==CharKey.k)&& (y-1 >= 0)) {
 				y--;
 			}
-			if (dir.isDownArrow()&& (y+1 < screenHeight)) {
+			if ((dir.isDownArrow()||dir.code==CharKey.j)&& (y+1 < screenHeight)) {
 				y++;
 			}
-			if (dir.isLeftArrow()&& (x-1 >= 0)) {
+			if ((dir.isLeftArrow()||dir.code==CharKey.h)&& (x-1 >= 0)) {
 				x--;
 			}
-			if (dir.isRightArrow()&& (x+1 < screenWidth)) {
+			if ((dir.isRightArrow()||dir.code==CharKey.l)&& (x+1 < screenWidth)) {
 				x++;
 			}
 			if (dir.code == CharKey.Q) {
