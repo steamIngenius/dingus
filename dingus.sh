@@ -1,0 +1,1 @@
+javac -classpath libjcsi/distro/libjcsi.jar:. HelloDungeon.java && java -classpath libjcsi/distro/libjcsi.jar:. HelloDungeon
